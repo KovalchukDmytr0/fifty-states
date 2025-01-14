@@ -1,0 +1,62 @@
+# Cursor Rules File for Project Stack
+
+# Project-specific guidelines and coding standards
+project_guidelines:
+  - Always use functional components in React.js.
+  - Enforce modular styling with Tailwind CSS for component-specific styles.
+  - Use D3.js for custom data visualizations; provide data in JSON format.
+  - Backend APIs must follow RESTful standards using Node.js (Express.js).
+  - Use PostgreSQL for database queries; write SQL queries following ANSI standards.
+  - Employ Sharp.js for image processing tasks, such as resizing or optimizing uploads.
+
+# Pre-defined commands for Cursor
+commands:
+  - "Generate a responsive navigation bar using Tailwind CSS."
+  - "Create a reusable React component for file upload using FilePond."
+  - "Generate an Express.js route for handling image uploads and processing with Sharp."
+  - "Write a D3.js script for rendering an interactive U.S. map with state-specific data."
+
+# Rules for specific coding patterns
+code_patterns:
+  react_components:
+    - Use ES6 syntax (e.g., arrow functions and destructuring).
+    - Export default for reusable components.
+    - PropTypes must validate all props.
+
+  express_routes:
+    - All routes must include error handling middleware.
+    - Use async/await for database queries.
+    - Separate route definitions and business logic into controller files.
+
+  database_queries:
+    - Ensure all PostgreSQL queries use parameterized inputs for security.
+    - Include error handling for database interactions.
+
+# AI suggestions and preferences
+ai_preferences:
+  - "Prioritize using Tailwind CSS for layout adjustments over inline styles."
+  - "For any React state management, prefer using the Context API unless the complexity requires Redux."
+  - "Optimize database queries by indexing frequently searched columns."
+
+# File organization
+file_structure:
+  - "All React components should reside in the `src/components` directory."
+  - "Backend services should be organized under `server/services`."
+  - "Static assets (e.g., images and styles) belong in the `public` folder."
+
+# Testing
+testing_guidelines:
+  - Write Jest unit tests for all React components.
+  - Test API endpoints using Postman or integration test suites like Mocha or Supertest.
+  - Ensure at least 80% test coverage across the codebase.
+
+# Security
+security_guidelines:
+  - "Use helmet.js in Express for securing HTTP headers."
+  - "Always validate and sanitize user inputs in forms."
+
+# Notes
+notes:
+  - "Refer to the project's README for additional guidelines."
+  - "Use `npm run lint` to ensure code adheres to project linting rules."
+
